@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
 import hero from "../assets/hero.png";
-import hero1 from "../assets/tank.png";
-import hero2 from "../assets/soilder.png";
+import hero1 from "../assets/hero2.png";
+import hero2 from "../assets/hero3.png";
+import hero3 from "../assets/hero4.png";
 import he from "../assets/he.png";
 import { Skeleton } from "@mui/material";
 
-const images = [hero, hero1, hero2];
+const images = [hero, hero1, hero2, hero3];
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
