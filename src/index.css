@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+ font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
