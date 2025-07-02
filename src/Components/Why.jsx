@@ -22,7 +22,7 @@ const Why = () => {
       <div className="max-w-[1100px] mx-auto">
         <div className="flex mb-8 md:mb-14">
           <img src={icon} alt="icon" />
-          <h2 className="font-bold md:text-4xl text-white text-2xl">
+          <h2 className="font-bold md:text-2xl text-white text-xl">
             Why Choose Us
           </h2>
         </div>

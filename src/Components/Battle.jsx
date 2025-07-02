@@ -8,7 +8,7 @@ const Battle = () => {
   return (
     <div className="px-4 md:px-8 lg:px-12 pt-4 md:pt-6 lg:pt-8">
       <div className="max-w-[1100px] mx-auto">
-        <div className="lg:w-1/2 sm:w-2/3 w-full mb-16">
+        <div className="lg:w-1/2 sm:w-2/3 w-full mb-10">
           <h2 className="font-bold text-[14px] text-[#1C3729] mb-4 md:text-[18px] ">
             Battle-Tested. Nation-Trusted. Innovation-Led.
           </h2>

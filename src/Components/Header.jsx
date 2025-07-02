@@ -65,7 +65,7 @@ const Header = () => {
         <div className="hidden md:block">
           <Link to="/security-submit">
             <button className="bg-[#1B1B1C] text-white font-medium px-4 py-2 rounded-lg hover:bg-[#0a0a0a] focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] transition-colors">
-              Security Submit
+              Anambra Security Submit
             </button>
           </Link>
         </div>
@@ -106,7 +106,7 @@ const Header = () => {
           ))}
           <Link to="/security-submit" onClick={closeMenu}>
             <button className="bg-[#1B1B1C] text-white font-medium px-4 py-6 rounded-lg hover:bg-[#0a0a0a] focus:outline-none focus:ring-2 focus:ring-[#0a0a0a] transition-colors w-full text-left">
-              Security Submit
+              Anambra Security Submit
             </button>
           </Link>
         </nav>

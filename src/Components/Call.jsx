@@ -9,7 +9,7 @@ const Call = () => {
     <section className="relative min-h-screen w-full overflow-hidden md:px-8 lg:px-12 px-4">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute w-full inset-0 bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: isImageLoaded ? `url(${img})` : "none" }}
       >
         {!isImageLoaded && (
@@ -22,14 +22,15 @@ const Call = () => {
           alt="Background"
           style={{ display: "none" }}
           onLoad={() => setIsImageLoaded(true)}
+          className="w-full h-full object-contain object-center"
         />
       </div>
 
       <div className="absolute w-full bottom-14 left-1/2 -translate-x-1/2 flex flex-col items-center text-center">
-        <h2 className="text-2xl md:text-3xl font-bold w-full text-white mb-8">
+        <h2 className="text-xl md:text-2xl font-bold w-full text-white mb-8">
           Mission-Ready. Field-Tested. Available Now.
         </h2>
-        <button className="bg-[#D4AF37] cursor-pointer px-8 py-4 border text-[#1B1B1C] text-base md:text-lg">
+        <button className="bg-[#D4AF37] cursor-pointer px-6 py-4 border text-[#1B1B1C] text-base ">
           Request a Call
         </button>
       </div>
