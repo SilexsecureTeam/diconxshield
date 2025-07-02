@@ -45,41 +45,43 @@ const Sector = () => {
 
   return (
     <section className=" w-full py-10 px-4 md:px-8 lg:px-12">
-      <h2 className="text-[#4D413B] md:text-4xl text-2xl font-bold mb-8">
-        Sectors We Serve
-      </h2>
-      <div className="container mx-full">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {cards.map((card, idx) => (
-            <div
-              key={idx}
-              className="bg-[#1B1B1C] hover:scale-105 rounded-lg shadow hover:shadow-lg transition-shadow duration-700 flex flex-col  p-6"
-            >
-              {!imageLoaded[idx] && (
-                <Skeleton
-                  variant="rectangular"
+      <div className="max-w-[1100px] mx-auto">
+        <h2 className="text-[#4D413B] md:text-3xl text-2xl font-bold mb-8">
+          Sectors We Serve
+        </h2>
+        <div className="container mx-full">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {cards.map((card, idx) => (
+              <div
+                key={idx}
+                className="bg-[#1B1B1C] hover:scale-105 rounded-lg shadow hover:shadow-lg transition-shadow duration-700 flex flex-col  p-6"
+              >
+                {!imageLoaded[idx] && (
+                  <Skeleton
+                    variant="rectangular"
+                    className="w-fit h-20 object-cover mb-4"
+                  />
+                )}
+                <img
+                  src={card.img}
+                  alt={card.title}
                   className="w-fit h-20 object-cover mb-4"
+                  style={{ display: imageLoaded[idx] ? "block" : "none" }}
+                  onLoad={() =>
+                    setImageLoaded((prev) =>
+                      prev.map((val, i) => (i === idx ? true : val))
+                    )
+                  }
                 />
-              )}
-              <img
-                src={card.img}
-                alt={card.title}
-                className="w-fit h-20 object-cover mb-4"
-                style={{ display: imageLoaded[idx] ? "block" : "none" }}
-                onLoad={() =>
-                  setImageLoaded((prev) =>
-                    prev.map((val, i) => (i === idx ? true : val))
-                  )
-                }
-              />
-              <h3 className="text-xl md:text-2xl text-[#888888] font-bold mb-2">
-                {card.title}
-              </h3>
-              <p className="text-[#CECECE] text-base md:text-lg font-normal">
-                {card.text}
-              </p>
-            </div>
-          ))}
+                <h3 className="text-xl md:text-2xl text-[#888888] font-bold mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-[#CECECE] text-base md:text-lg font-normal">
+                  {card.text}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

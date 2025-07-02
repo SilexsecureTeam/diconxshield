@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="bg-[#2A2928] fixed w-full px-4 sm:px-6 md:px-8 lg:px-12 py-4 top-0 left-0 z-50 font-jakarta shadow-md">
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="container mx-auto max-w-[1100px] flex items-center justify-between">
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="/" onClick={closeMenu}>
