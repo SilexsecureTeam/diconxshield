@@ -12,7 +12,6 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const timeoutRef = useRef(null);
   const [imageLoaded, setImageLoaded] = useState(images.map(() => false));
-  const [heLoaded, setHeLoaded] = useState(false);
 
   // Duration of each slide in ms
   const slideDuration = 5000;
@@ -74,20 +73,12 @@ const Hero = () => {
 
       {/* Decorative/Character Image */}
       <div className="absolute bottom-10 right-20 pointer-events-none">
-        {!heLoaded && (
-          <Skeleton
-            variant="rectangular"
-            className="object-contain opacity-90"
-          />
-        )}
         <img
           src={he}
           alt="Character illustration"
           className="object-contain opacity-90"
           loading="lazy"
           decoding="async"
-          style={{ display: heLoaded ? "block" : "none" }}
-          onLoad={() => setHeLoaded(true)}
         />
       </div>
     </section>

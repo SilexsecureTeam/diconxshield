@@ -4,6 +4,8 @@ import About from "../Components/About";
 import Footer from "../Components/Footer";
 import Our from "../Components/Our";
 import Who from "../Components/Who";
+import Commitment from "../Components/Commitment";
+import Stragetic from "../Components/Stragetic";
 
 const AboutPage = () => {
   return (
@@ -13,6 +15,8 @@ const AboutPage = () => {
         <About />
         <Our />
         <Who />
+        <Commitment />
+        <Stragetic />
         <Footer />
       </main>
     </div>
