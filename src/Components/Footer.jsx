@@ -18,48 +18,50 @@ const Footer = () => {
       <div className="max-w-[1100px] mx-auto">
         <div className=" mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           {/* First Div: Logo, Text, and Copyright */}
-          <div className="flex flex-col items-center  md:items-start text-center md:text-left">
+          <div className="flex flex-col items-start text-left">
             <img
               src={logo}
               alt="Company Logo"
               className="h-16 mb-4"
               aria-label="Your Company Logo"
             />
-            <p className="text-lg mb-4 max-w-xs">
-              Premier Defence & Security Solutions <br /> Provider
+            <p className="text-sm mb-4 max-w-xs">
+              Premier Defence & Security Solutions Provider
             </p>
-            <p className="text-lg">
+            <p className="text-sm">
               © {new Date().getFullYear()}. All rights reserved.
             </p>
           </div>
 
           {/* Second Div: Contact Information */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <h3 className="text-xl text-white text-start font-bold mb-10">
+          <div className="flex flex-col items-start md:items-start text-left md:text-left">
+            <h3 className="text-lg text-white text-start font-bold mb-10">
               Contact Us
             </h3>
-            <ul className="space-y-2 text-lg">
+            <ul className="space-y-2 text-sm">
               <li className="flex items-center justify-end ">
                 <span>28, Katampe Road, Jahi District Abuja-FCT, Nigeria</span>
               </li>
 
               <li className="flex items-center ">
-                <span>Email: enquiry@siconxshield.com</span>
+                <span className="font-bold mr-2">Email: </span>
+                enquiry@diconxshield.com
               </li>
               <li className="flex items-center ">
-                <span>Phone: +234 703 303 6373</span>
+                <span className="font-bold mr-2">Phone: </span> +234 703 303
+                6373
               </li>
             </ul>
           </div>
 
           {/* Third Div: Quick Links with Absolute Positioning */}
-          <div className="flex flex-col items-center  text-center md:text-left relative">
-            <h3 className="text-xl text-white font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2 text-base">
+          <div className="flex flex-col md:items-center  text-left md:text-left relative">
+            <h3 className="text-lg text-white font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-sm list-disc list-outside pl-6 sm:pl-8">
               {quickLinks.map((link, index) => (
                 <li
                   key={index}
-                  className="flex items-center list-disc gap-2 hover:text-[#D4AF37] transition-colors duration-200"
+                  className="text-[#CECECE] hover:text-[#D4AF37] transition-colors duration-200"
                 >
                   <Link to={link.path} className="hover:underline">
                     {link.name}

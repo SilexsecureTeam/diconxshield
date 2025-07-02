@@ -65,7 +65,7 @@ const Sector = () => {
                 <img
                   src={card.img}
                   alt={card.title}
-                  className="w-fit h-20 object-cover mb-4"
+                  className="w-fit h-10 object-cover mb-6"
                   style={{ display: imageLoaded[idx] ? "block" : "none" }}
                   onLoad={() =>
                     setImageLoaded((prev) =>

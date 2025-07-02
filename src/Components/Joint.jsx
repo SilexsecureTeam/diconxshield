@@ -25,7 +25,7 @@ const Joint = () => {
         />
       </div>
 
-      <div className="absolute top-10 left-20 md:px-8 lg:px-12 px-4">
+      <div className="absolute top-10 md:left-20 md:px-8 lg:px-12 px-4">
         <h2 className="text-lg md:text-xl font-bold max-w-[424px] text-[#9FCCAB] mb-4">
           Joint Venture with the Defence Industries Corporation of Nigeria
           (DICON)

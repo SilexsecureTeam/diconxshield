@@ -1,7 +1,7 @@
 import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import logo from "./assets/logo.png";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import PageNotFound from "./Pages/PageNotFound";
 
 const Home = lazy(() => import("./Pages/Home"));
@@ -17,6 +17,12 @@ const loadingLogoStyle = {
 };
 
 function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <div>
       {/* Routes with Suspense for lazy loading */}

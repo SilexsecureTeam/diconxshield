@@ -6,6 +6,8 @@ import Our from "../Components/Our";
 import Who from "../Components/Who";
 import Commitment from "../Components/Commitment";
 import Stragetic from "../Components/Stragetic";
+import Team from "../Components/Team";
+import Hub from "../Components/Hub";
 
 const AboutPage = () => {
   return (
@@ -17,6 +19,8 @@ const AboutPage = () => {
         <Who />
         <Commitment />
         <Stragetic />
+        <Team />
+        <Hub />
         <Footer />
       </main>
     </div>

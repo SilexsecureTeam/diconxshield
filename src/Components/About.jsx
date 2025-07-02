@@ -32,7 +32,7 @@ const About = () => {
         </p>
       </div>
       {/* Decorative/Character Image */}
-      <div className="absolute bottom-10 left-20 pointer-events-none">
+      <div className="absolute bottom-10 md:left-32 left-5 pointer-events-none">
         <img
           src={he}
           alt="Character illustration"

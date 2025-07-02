@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative/Character Image */}
-      <div className="absolute bottom-10 right-35 pointer-events-none">
+      <div className="absolute bottom-10 md:right-35 right-8 pointer-events-none">
         <img
           src={he}
           alt="Character illustration"
