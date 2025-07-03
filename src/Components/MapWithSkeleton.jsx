@@ -5,14 +5,13 @@ const MapWithSkeleton = () => {
   const [loaded, setLoaded] = useState(false);
 
   return (
-    <div className="w-full flex justify-center my-8" style={{ minHeight: 450 }}>
+    <div className="w-full flex justify-center " style={{ minHeight: 450 }}>
       {!loaded && (
         <Skeleton
           variant="rectangular"
           animation="wave"
           width="100%"
           height={450}
-          sx={{ borderRadius: 2 }}
         />
       )}
       <iframe
@@ -21,7 +20,6 @@ const MapWithSkeleton = () => {
         height="450"
         style={{
           border: 0,
-          borderRadius: 12,
           display: loaded ? "block" : "none",
         }}
         allowFullScreen=""
