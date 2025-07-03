@@ -12,7 +12,7 @@ import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
-    <div className="max-w-[1700px] mx-auto">
+    <div className="">
       <Header />
       <main className="pt-[88px]">
         <Hero />

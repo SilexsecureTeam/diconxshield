@@ -11,7 +11,7 @@ import Hub from "../Components/Hub";
 
 const AboutPage = () => {
   return (
-    <div className="max-w-[1700px] mx-auto">
+    <div className="">
       <Header />
       <main className="pt-[88px]">
         <About />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Skeleton } from "@mui/material";
-import teamMember1 from "../assets/team1.png"; // Placeholder image imports
-import teamMember2 from "../assets/team2.png";
+import teamMember1 from "../assets/team.png"; // Placeholder image imports
+import teamMember2 from "../assets/team.png";
 import teamMember3 from "../assets/team.png";
 
 const teamMembers = [
@@ -41,7 +41,7 @@ const Team = () => {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className="w-full h-72  object-cover mb-2"
+                  className="w-full h-72  object-cover object-top mb-2"
                   style={{ display: imageLoaded[idx] ? "block" : "none" }}
                   onLoad={() =>
                     setImageLoaded((prev) =>
