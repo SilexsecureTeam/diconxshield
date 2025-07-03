@@ -9,7 +9,7 @@ const Call = () => {
     <section className="relative min-h-screen w-full overflow-hidden md:px-8 lg:px-12 px-4">
       {/* Background Image */}
       <div
-        className="absolute w-full inset-0 bg-contain bg-center bg-no-repeat"
+        className="absolute w-full inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: isImageLoaded ? `url(${img})` : "none" }}
       >
         {!isImageLoaded && (
@@ -22,7 +22,7 @@ const Call = () => {
           alt="Background"
           style={{ display: "none" }}
           onLoad={() => setIsImageLoaded(true)}
-          className="w-full h-full object-contain object-center"
+          className="w-full h-full object-cover object-center"
         />
       </div>
 

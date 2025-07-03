@@ -25,12 +25,12 @@ const Joint = () => {
         />
       </div>
 
-      <div className="absolute top-10 md:left-20 md:px-8 lg:px-12 px-4">
+      <div className="absolute top-10 md:left-22 md:px-8 lg:px-12 px-4">
         <h2 className="text-lg md:text-xl font-bold max-w-[424px] text-[#9FCCAB] mb-4">
           Joint Venture with the Defence Industries Corporation of Nigeria
           (DICON)
         </h2>
-        <p className="text-sm font-normal md:text-lg max-w-[583px] text-[#D9D9D9] leading-relaxed">
+        <p className="text-sm font-normal md:text-[15px] max-w-[583px] text-[#D9D9D9] leading-relaxed">
           DICON-X-SHIELD is Nigeria’s premier manufacturer of military-grade
           armoured vehicles and tactical defense equipment—driven by innovation,
           committed to excellence.

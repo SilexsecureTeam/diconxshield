@@ -21,7 +21,7 @@ const Why = () => {
     <div className="bg-[#1C3729] w-full py-10 px-4 md:px-8 lg:px-12 ">
       <div className="max-w-[1100px] mx-auto">
         <div className="flex mb-8 md:mb-14">
-          <img src={icon} alt="icon" />
+          <img src={icon} alt="icon" className="mr-1 w-8 h-8" />
           <h2 className="font-bold md:text-2xl text-white text-xl">
             Why Choose Us
           </h2>
@@ -29,10 +29,10 @@ const Why = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {content.map((item, index) => (
             <div key={index} className="">
-              <h2 className="text-base md:text-xl font-bold mb-1 max-w-[330px] text-white">
+              <h2 className="text-base md:text-xl font-bold mb-2.5 max-w-[330px] text-white">
                 {item.title}
               </h2>
-              <p className="text-white max-w-[325px] font-light text-[14px] md:text-[18px]">
+              <p className="text-white max-w-[325px] font-light text-[14px] md:text-[15px]">
                 {item.text}
               </p>
             </div>

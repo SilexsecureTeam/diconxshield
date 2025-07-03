@@ -22,7 +22,7 @@ const Who = () => {
 
   return (
     <div className="w-full px-4 sm:px-6 md:px-8 lg:px-12 py-15 ">
-      <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-center md:space-x-14 space-y-8 md:space-y-0">
+      <div className="max-w-[1100px] mx-auto flex flex-col md:flex-row justify-between items-center md:space-x-12 space-y-8 md:space-y-0">
         {/* Left (Image) */}
         <div
           className="w-full md:w-1/2 flex items-center justify-center"
@@ -49,7 +49,7 @@ const Who = () => {
           <img
             src={who}
             alt="who"
-            className={`w-full h-auto ${
+            className={`w-full h-66 ${
               imgLoaded ? "block" : "hidden"
             } object-cover rounded-lg`}
             style={
@@ -64,8 +64,8 @@ const Who = () => {
 
         {/* Right (Text) */}
         <div className="w-full md:w-1/2" ref={rightRef}>
-          <h2 className="text-base md:text-lg font-bold mb-5">Who are we</h2>
-          <p className="text-base text-justify md:text-lg font-normal mb-5">
+          <h2 className="text-base md:text-xl font-bold mb-5">Who are we</h2>
+          <p className="text-sm text-justify md:text-[15px] font-normal mb-5">
             DICON-X-SHIELD is a Military Equipment Manufacturing Company with
             expertise in designing, developing, and producing armoured vehicles
             and cutting-edge defence and security solutions tailored to meet the
@@ -74,7 +74,7 @@ const Who = () => {
             DICON-X-SHIELD is a premiere Joint Venture Company (JVC) of the
             Defence Industries Corporation of Nigeria (DICON).{" "}
           </p>
-          <p className="text-base text-justify md:text-lg font-normal">
+          <p className="text-sm text-justify md:text-[15px] font-normal">
             With a mission to strengthening national security, DICON-X-SHIELD
             leverages its deep expertise, strategic partnerships, and
             stateof-the-art technology to deliver innovative, reliable, and

@@ -29,7 +29,7 @@ const Commitment = () => {
         <h2 className="text-xl md:text-2xl text-center text-white font-bold mb-5">
           Our Commitment
         </h2>
-        <p className="text-base text-center md:text-lg max-w-[945px] mx-auto text-white  font-normal">
+        <p className="text-sm text-center md:text-[15px] max-w-[945px] mx-auto text-white  font-normal">
           We are committed to strengthening national defence through innovation,
           partnership, and a dedication to excellence and delivery of products
           that save lives, protect assets, and ensure national security.
@@ -58,10 +58,10 @@ const Commitment = () => {
                     )
                   }
                 />
-                <h3 className="text-xl md:text-2xl text-[#000000] font-bold mb-6">
+                <h3 className="text-lg md:text-xl text-[#000000] font-bold mb-6">
                   {card.title}
                 </h3>
-                <p className="text-[#000000] text-center text-base md:text-lg font-normal">
+                <p className="text-[#000000] text-center text-sm md:text-[15px] font-normal">
                   {card.text}
                 </p>
               </div>

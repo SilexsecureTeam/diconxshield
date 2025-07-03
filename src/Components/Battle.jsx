@@ -9,10 +9,10 @@ const Battle = () => {
     <div className="px-4 md:px-8 lg:px-12 pt-4 md:pt-6 lg:pt-8">
       <div className="max-w-[1100px] mx-auto">
         <div className="lg:w-1/2 sm:w-2/3 w-full mb-10">
-          <h2 className="font-bold text-[14px] text-[#1C3729] mb-4 md:text-[18px] ">
+          <h2 className="font-bold text-[14px] text-[#1C3729] mb-4 md:text-[20px] ">
             Battle-Tested. Nation-Trusted. Innovation-Led.
           </h2>
-          <p className="md:text-[18px] text-[14px] font-normal text-[#4D413B] ">
+          <p className="md:text-[15px] text-[14px] font-normal text-[#4D413B] ">
             At DICON-X-SHIELD, we don’t just manufacture equipment we engineer
             confidence. Every product we deliver is a result of strategic
             collaboration, advanced technology, and a deep commitment to those

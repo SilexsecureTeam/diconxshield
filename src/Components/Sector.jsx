@@ -73,10 +73,10 @@ const Sector = () => {
                     )
                   }
                 />
-                <h3 className="text-xl md:text-2xl text-[#888888] font-bold mb-2">
+                <h3 className="text-lg md:text-xl text-[#888888] font-bold mb-2">
                   {card.title}
                 </h3>
-                <p className="text-[#CECECE] text-base md:text-lg font-normal">
+                <p className="text-[#CECECE] text-sm md:text-[15px] font-normal">
                   {card.text}
                 </p>
               </div>
