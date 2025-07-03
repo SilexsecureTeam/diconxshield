@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Skeleton } from "@mui/material";
-import teamMember1 from "../assets/team.png"; // Placeholder image imports
-import teamMember2 from "../assets/team1.png";
-import teamMember3 from "../assets/team2.png";
+import teamMember1 from "../assets/team.png";
+// import teamMember2 from "../assets/team1.png";
+// import teamMember3 from "../assets/team2.png";
 
 const teamMembers = [
   {
@@ -10,16 +10,16 @@ const teamMembers = [
     name: "Charles Ibanga.",
     position: "Head of Tactical Systems",
   },
-  {
-    img: teamMember2,
-    name: "David A.",
-    position: "Head of Tactical Systems",
-  },
-  {
-    img: teamMember3,
-    name: "David A.",
-    position: "Head of Tactical Systems",
-  },
+  // {
+  //   img: teamMember2,
+  //   name: "David A.",
+  //   position: "Head of Tactical Systems",
+  // },
+  // {
+  //   img: teamMember3,
+  //   name: "David A.",
+  //   position: "Head of Tactical Systems",
+  // },
 ];
 
 const Team = () => {
@@ -32,7 +32,8 @@ const Team = () => {
           Meet Our Team
         </h2>
         <div className="container w-full">
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {/* <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3"> */}
+          <div className="grid gap-5 place-items-center justify-center">
             {teamMembers.map((member, idx) => (
               <div key={idx} className=" flex flex-col items-start ">
                 {!imageLoaded[idx] && (

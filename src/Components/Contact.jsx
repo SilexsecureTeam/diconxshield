@@ -6,10 +6,10 @@ import he from "../assets/he.png";
 const Contact = () => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   return (
-    <div className="relative h-[90vh] w-full overflow-hidden">
+    <div className="relative h-[80vh] w-full overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover  bg-top bg-no-repeat"
         style={{ backgroundImage: isImageLoaded ? `url(${about})` : "none" }}
       >
         {!isImageLoaded && (
