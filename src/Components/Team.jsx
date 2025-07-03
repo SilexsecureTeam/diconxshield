@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Skeleton } from "@mui/material";
 import teamMember1 from "../assets/team.png"; // Placeholder image imports
-import teamMember2 from "../assets/team.png";
-import teamMember3 from "../assets/team.png";
+import teamMember2 from "../assets/team1.png";
+import teamMember3 from "../assets/team2.png";
 
 const teamMembers = [
   {
     img: teamMember1,
-    name: "David A.",
+    name: "Charles Ibanga.",
     position: "Head of Tactical Systems",
   },
   {
