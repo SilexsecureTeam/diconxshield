@@ -7,7 +7,7 @@ import { Skeleton } from "@mui/material";
 const navLinks = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About Us" },
-  { label: "Solution" },
+  { to: "/solution", label: "Solution" },
   { to: "/contact", label: "Contact Us" },
 ];
 

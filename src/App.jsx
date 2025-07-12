@@ -7,6 +7,7 @@ import PageNotFound from "./Pages/PageNotFound";
 const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const Contact = lazy(() => import("./Pages/Contact"));
+const Solution = lazy(() => import("./Pages/Solution"));
 
 const loadingLogoStyle = {
   width: "90px",
@@ -45,6 +46,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/solution" element={<Solution />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
