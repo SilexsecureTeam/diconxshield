@@ -8,6 +8,8 @@ const Home = lazy(() => import("./Pages/Home"));
 const About = lazy(() => import("./Pages/About"));
 const Contact = lazy(() => import("./Pages/Contact"));
 const Solution = lazy(() => import("./Pages/Solution"));
+const ArmorPage = lazy(() => import("./Pages/ArmorPage"));
+const GearPage = lazy(() => import("./Pages/GearPage"));
 
 const loadingLogoStyle = {
   width: "90px",
@@ -47,6 +49,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/solution" element={<Solution />} />
+          <Route path="/arm" element={<ArmorPage />} />
+          <Route path="/gear" element={<GearPage />} />
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
