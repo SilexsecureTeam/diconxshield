@@ -28,7 +28,7 @@ const Defhero = () => {
       <div className="mx-auto max-w-[1100px]">
         <div className="max-w-[720px] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <h2 className="text-2xl md:text-5xl font-bold text-center  mb-4 text-[#D4AF37]">
-            Dfense
+            Defense Software
           </h2>
           <p className="text-sm font-normal  w-[250px] md:w-full md:text-lg md:max-w-[773px] text-white leading-relaxed">
             Zero compromise. Battlefield-proven. Engineered to give you the
