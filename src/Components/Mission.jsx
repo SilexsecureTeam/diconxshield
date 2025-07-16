@@ -30,6 +30,7 @@ const missionData = [
     title: "Surveillance & Drones",
     text: "AI-enhanced UAVs and sensor towers providing real-time threat visibility and battlefield intelligence.",
     subTitles: ["AI Enhanced", "Real-time Intel", "Long range"],
+    path: "/drone",
   },
   {
     id: 4,
@@ -37,6 +38,7 @@ const missionData = [
     title: "Ballistic Booths & Shields",
     text: "Deployable BEACON surveillance units, ballistic riot shields, and armored observation towers.",
     subTitles: ["Mine Resistant", "All-Terrain", "Ballistic Protection"],
+    path: "/shield",
   },
   {
     id: 5,
@@ -44,6 +46,7 @@ const missionData = [
     title: "Defense Software & Comms",
     text: "Encrypted mission coordination systems with GPS tracking, alert networks, and secure comms.",
     subTitles: ["End-to-End Encryption", "GPS Tracking", "Mesh Network"],
+    path: "/defense",
   },
   {
     id: 6,

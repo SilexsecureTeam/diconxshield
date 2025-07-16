@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import about from "../assets/contact.png";
+import about from "../assets/solution.png";
 import { Skeleton } from "@mui/material";
 // import he from "../assets/he.png";
 
